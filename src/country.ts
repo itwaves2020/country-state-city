@@ -14,6 +14,7 @@ function loadCountries() {
 		.get('/country.json')
 		.then(result => {
 			console.log("resultresultresult: ",result)
+			countryList = result.data;
 		})
 		.catch(error => {
 			console.log("Error: ", error)
