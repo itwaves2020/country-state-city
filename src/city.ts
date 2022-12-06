@@ -8,7 +8,7 @@ let cityList: any[] = [];
  * Load countries
  * @returns 
  */
- function loadCountries() {
+ function loadCity() {
 	return AxiosInstance()
 		.get('/city.json')
 		.then(result => {
@@ -19,7 +19,7 @@ let cityList: any[] = [];
 			console.log("Error: ", error)
 		})
 }
-loadCountries();
+loadCity();
 
 // Get a list of all cities.
 function getAllCities() {
