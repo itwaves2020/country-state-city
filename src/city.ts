@@ -10,7 +10,7 @@ let cityList: any[] = [];
  */
  function loadCountries() {
 	return AxiosInstance()
-		.get('/country.json')
+		.get('/city.json')
 		.then(result => {
 			console.log("resultresultresult: ",result)
 			cityList = result.data;
