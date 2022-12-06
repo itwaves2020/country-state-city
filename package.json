@@ -39,7 +39,9 @@
     "url": "https://github.com/harpreetkhalsagtbit/country-state-city/issues"
   },
   "homepage": "https://github.com/harpreetkhalsagtbit/country-state-city#readme",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
   "devDependencies": {
     "ts-node": "^10.7.0",
     "@types/jest": "^26.0.19",
