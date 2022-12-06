@@ -1,6 +1,25 @@
-import cityList from './assets/city.json';
+// import cityList from './assets/city.json';
 import { compare } from './utils';
 import { ICity } from './interface';
+import { AxiosInstance } from './http';
+let cityList: any[] = [];
+
+/**
+ * Load countries
+ * @returns 
+ */
+ function loadCountries() {
+	return AxiosInstance()
+		.get('/country.json')
+		.then(result => {
+			console.log("resultresultresult: ",result)
+			cityList = result.data;
+		})
+		.catch(error => {
+			console.log("Error: ", error)
+		})
+}
+loadCountries();
 
 // Get a list of all cities.
 function getAllCities() {
