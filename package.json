@@ -11,7 +11,7 @@
     "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "prepublish": "npm run build",
     "lint": "eslint index.ts __test__ --fix",
-    "postinstall": "npm install && npm run build"
+    "prepare": "npm install && npm run build"
   },
   "author": "harpreetkhalsagtbit@gmail.com",
   "license": "GPL-3.0",
